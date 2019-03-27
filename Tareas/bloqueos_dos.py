@@ -35,9 +35,11 @@ def acumula5():
 				print('Liberado bloqueo por', hilo_actual)
 				bloquea.release()
 
+# variables globales.
+total = 0
+bloquea = threading.Lock()
+
 def main():
-	total = 0
-	bloquea = threading.Lock()
 	hilo1 = threading.Thread(name='h1', target=acumula5)
 	hilo2 = threading.Thread(name='h2', target=acumula5)
 	hilo1.start()
