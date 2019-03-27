@@ -20,9 +20,11 @@ un bloqueo y un desbloqueo, respectivamente:
 import threading
 
 total = 0
+bloquea = threading.Lock()
 
 def acumula5():
 	global total
+	global bloquea
 	contador = 0
 	hilo_actual = threading.current_thread().getName()
 	while contador < 20:
@@ -38,8 +40,9 @@ def acumula5():
 			print('Liberado bloqueo por', hilo_actual)
 			bloquea.release()
 
+
 def main():
-	bloquea = threading.Lock()
+	#bloquea = threading.Lock()
 	hilo1 = threading.Thread(name='h1', target=acumula5)
 	hilo2 = threading.Thread(name='h2', target=acumula5)
 	hilo1.start()
