@@ -7,7 +7,7 @@ videos = []
 
 
 def load_name_file_gif():
-    listas = os.listdir(r'imagen')
+    listas = os.listdir(r'./../work/thumbails')
     print(listas)
     for item in listas:
         div = item.split("_thumbs_")
