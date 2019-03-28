@@ -13,4 +13,7 @@
 	un explorador con botoneras y dirección.
 ### Tareas o Threads
   	Ejemplos de tareas extradidos de python para principiantes https://python-para-impacientes.blogspot.com.es/2016/12/threading-programacion-con-hilos-i.html
+
+### init_file
+	uso de libreria configparse, informacion extraida de pagina oficial python
     
